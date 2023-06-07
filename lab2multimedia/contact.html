@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Me</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+
+	<style>
+		 *{
+		 	margin: 0;
+		 	padding: 0;
+		 	box-sizing: border-box;
+		 	font-family: 'Poppins', sans-serif;
+		 }
+		 nav {
+		  background-color: black;
+		  opacity: 0.90;
+		  height: 60px;
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  padding: 0 50px;
+		}
+		.logo img {
+		  height: 40px;
+		}
+
+		.nav-links li {
+		  display: inline-block;
+		  margin-left: 20px;
+		}
+
+		.nav-links li a {
+		  color: #fff;
+		  text-decoration: none;
+		  font-size: 16px;
+		}
+
+		.nav-links li a:hover {
+		  color: #ffcc00;
+		}
+		 .contact{
+		 	position: relative;
+		 	min-height: 100vh;
+		 	padding: 50px 100px;
+		 	display: flex;
+		 	justify-content: center;
+		 	align-items: center;
+		 	flex-direction: column;
+		 	background: url(hhh.jpg) ;
+		 	background-size: cover;
+		 }
+		 .contact .content{
+		 	max-width: 800px;
+		 	text-align: center;
+		 }
+		 .contact .content h2{
+		 	font-size: 36px;
+		 	font-weight: 500;
+		 	color: #fff;
+		 }
+		 .contact .content p{
+		 	font-weight: 300;
+		 	color: #fff;
+		 }
+		 .container{
+		 	width: 100%;
+		 	display: flex;
+		 	justify-content: center;
+		 	align-items: center;
+		 	margin-top: 30px;
+		 }
+		 .container .contactinfo{
+		 	width: 100%;
+		 	display: flex;
+		 	flex-direction: column;
+		 }
+		 .container .contactinfo .box{
+		 	position: relative;
+		 	padding: 20px 0;
+		 	display: flex;
+		 }
+		 .container .contactinfo .box .text{
+		 	display: flex;
+		 	margin-left: 20px;
+		 	font-size: 16px;
+		 	color: #fff;
+		 	flex-direction: column;
+		 	font-weight: 300;
+		 }
+		 .container .contactinfo .box .text h3{
+		 	font-weight: 500;
+		 	color: blueviolet;
+		 }
+		 .contactform{
+		 	width: 60%;
+		 	padding: 40px;
+		 	background: #fff;
+		 }
+		 .contactform h2{
+		 	font-size: 30px;
+		 	color: #333;
+		 	font-weight: 500;
+		 }
+		 .contactform .inputbox{
+		 	position: relative;
+		 	width: 100%;
+		 	margin-top: 10px;
+		 }
+		 .contactform .inputbox input, 
+		 .contactform .inputbox textarea{
+		 	width: 100%;
+		 	padding: 5px 0;
+		 	font-size: 16px;
+		 	margin: 10px 0;
+		 	border: none;
+		 	border-bottom: 2px solid #333;
+		 	outline: none;
+		 	resize: none;
+		 }
+		 .contactform .inputbox span{
+		 	position: absolute;
+		 	left: 0;
+		 	padding: 5px 0;
+		 	font-size: 16px;
+		 	margin: 10px 0;
+		 	pointer-events: none;
+		 	transition: 0.5s;
+		 	color: #666;
+		 }
+		 .contactform .inputbox input:focus ~ span,
+		 .contactform .inputbox input:valid ~ span,
+		 .contactform .inputbox textarea:focus ~ span,
+		 .contactform .inputbox textarea:valid ~ span{
+		 	color: #e91e63;
+		 	font-size: 12px;
+		 	transform: translateY(-20px);
+		 }
+		 .contactform .inputbox input[type="submit"]{
+		 	width: 100px;
+		 	background: #00bcd4;
+		 	color: #fff;
+		 	cursor: pointer;
+		 	padding: 10px;
+		 	font-size: 18px;
+		 }
+		 @media (max-width:991px){
+		 	.contact{
+		 		padding: 50px;
+		 	}
+		 	.container{
+		 		flex-direction: column;
+		 	}
+		 	.container .contactinfo{
+		 		margin-bottom: 40px;
+		 	}
+		 	.container .contactinfo,
+		 	.contactform{
+		 		width: 100%;
+		 	}
+		 }
+		 
+	</style>
+
+	<header>
+    <nav>
+      <div class="logo">
+        <a href="home.html"><img src="logo.jpeg" alt="Logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="projects.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+	<section class ="contact">
+		<div class="content">
+			<h2>Contact Me</h2>
+			<p>Would you like to send me a message?</p>
+
+		</div>
+		<div class= "container">
+			<div class ="contactinfo">
+				<div class = "box">
+					<div class = "text">
+						<h3>Address</h3>
+						<p>Kenya, Nairobi. Along Ole Sangale road</p>
+					</div>
+				</div>
+
+				<div class = "box">
+					<div class = "text">
+						<h3>Phone Number</h3>
+						<p>+254712345678</p>
+					</div>
+				</div>
+
+				<div class = "box">
+					<div class = "text">
+						<h3>Email</h3>
+						<p>134885@strathmore.edu</p>
+					</div>
+				</div>
+
+			</div>
+			<div class ="contactform">
+				<form>
+					<h2>Send Message</h2>
+					<div class="inputbox">
+						<input type ="text" name="" required="required">
+						<span>Full Name</span>
+					</div>
+
+					<div class="inputbox">
+						<input type ="text" name="" required="required">
+						<span>Email</span>
+					</div>
+
+					<div class="inputbox">
+						<textarea required="required"></textarea>
+						<span>Type your Message</span>
+					</div>
+					<div class="inputbox">
+						<input type="submit" name="" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
+	<style>
+footer {
+  background-color: black;
+  opacity: 0.90;
+  padding: 15px;
+  color: white;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-navigation ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.footer-navigation ul li:first-child {
+  margin-left: 0;
+}
+
+.footer-navigation ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-social-icons a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footer-social-icons img {
+  width: 20px;
+  height: 20px;
+}
+</style>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="logo.jpeg" alt="Logo">
+    </div>
+    
+    <nav class="footer-navigation">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="projects.html">Portfolio</a></li>
+        
+      </ul>
+    </nav>
+    
+    <div class="footer-social-icons">
+      <a href="https://www.facebook.com/"><img src="fb.png" alt="Facebook"></a>
+      <a href="https://about.twitter.com/en/who-we-are/brand-toolkit"><img src="twit.png" alt="Twitter"></a>
+      <a href="https://www.instagram.com/"><img src="ig.jpeg" alt="Instagram"></a>
+    </div>
+  </div>
+</footer>
+
+
+	
+</body>
+</html>
